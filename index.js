@@ -4,7 +4,11 @@ class Utils {
      * @param {String} language - This specifies the language to use in this package. Use the official language strings.
      */
     constructor(language) {
-        this.language = language;
+        if (this.languages.includes(language)) {
+            this.language = language;
+        } else {
+            return new Error("ValueError: given language string does not match any of the supported strings.");
+        }
     };
     /**
      * @returns Returns every supported language.
