@@ -9,7 +9,7 @@ class Utils {
     /**
      * @returns Returns every supported language.
      */
-    languages = [ "en-US", "en-AU", "en-CA", "en-BZ", "en-CA" ];
+    languages = [ "en-US", "en-AU", "en-CA", "en-BZ", "en-CA", "en-029", "en-IE", "en-JM", "en-NZ", "en-ZA", "en-TT", "en-GB", "de-AT", "de-LI", "de-LU", "de-CH", "en-IE", "de-DE" ];
     /**
      * 
      * @param {Date} date1 
