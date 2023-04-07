@@ -1,0 +1,18 @@
+{
+  "name": "ltm-utilites",
+  "version": "0.0.1",
+  "description": "This is a utility package for practical uses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Date"
+  ],
+  "funding": {
+    "type": "BuyMeACoffee",
+    "url": "https://www.buymeacoffee.com/leontm"
+  },
+  "author": "LeonTM",
+  "license": "ISC"
+}
