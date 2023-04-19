@@ -137,7 +137,6 @@ class Utils {
         let id = "";
         if (numbers === true) {
             parts = parts.concat(parts_Z);
-            console.log(parts);
         };
         if (small === true) {
             parts = parts.concat(parts_K);
@@ -148,7 +147,6 @@ class Utils {
         for (let i = 0; i < length;i++) {
             id+=parts[Math.floor(Math.random()*parts.length)];
         };
-        console.log(parts);
         return id;
     };
 };
