@@ -151,5 +151,3 @@ class Utils {
     };
 };
 module.exports = Utils;
-const ga = new Utils("de-DE");
-console.log(ga.generateId(true, true, true, 202));
