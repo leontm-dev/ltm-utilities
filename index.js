@@ -115,6 +115,14 @@ class Utils {
         }
         return (num / si[index].v).toFixed(2).replace(/\.0+$|(\.[0-9]*[1-9])0+$/, "$1") + si[index].s;
     };
+    /**
+     * 
+     * @param {Boolean} numbers - Should your id include numbers?
+     * @param {Boolean} small -Should your id include small letters?
+     * @param {Boolean} big - Should your id include BIG letters?
+     * @param {Number} length - The length of the returned id
+     * @returns A Id string with the components you chooses and the length you defined!
+     */
     generateId(numbers, small, big, length) {
         let parts = [];
         const parts_G = [
