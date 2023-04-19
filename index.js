@@ -115,5 +115,35 @@ class Utils {
         }
         return (num / si[index].v).toFixed(2).replace(/\.0+$|(\.[0-9]*[1-9])0+$/, "$1") + si[index].s;
     };
-}
+    generateId(numbers, small, big, length) {
+        let parts = [];
+        const parts_G = [
+            "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+        ];
+        const parts_K = [
+            "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+        ];
+        const parts_Z = [
+            "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
+        ];
+        let id = "";
+        if (numbers === true) {
+            parts = parts.concat(parts_Z);
+            console.log(parts);
+        };
+        if (small === true) {
+            parts = parts.concat(parts_K);
+        };
+        if (big === true) {
+            parts = parts.concat(parts_G);
+        };
+        for (let i = 0; i < length;i++) {
+            id+=parts[Math.floor(Math.random()*parts.length)];
+        };
+        console.log(parts);
+        return id;
+    };
+};
 module.exports = Utils;
+const ga = new Utils("de-DE");
+console.log(ga.generateId(true, true, true, 202));
