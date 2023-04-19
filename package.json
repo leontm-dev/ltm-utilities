@@ -1,6 +1,6 @@
 {
   "name": "ltm-utilites",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This is a utility package for practical uses",
   "main": "index.js",
   "scripts": {
