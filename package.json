@@ -1,6 +1,6 @@
 {
   "name": "ltm-utilities",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "This is a utility package for practical uses",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,13 @@
     "url": "https://www.buymeacoffee.com/leontm"
   },
   "author": "LeonTM <leontm.dev@gmail.com> (https://me.leontm-official.repl.co)",
-  "licenses": [{"type": "GNU GENERAL PUBLIC LICENSE", "url": "https://github.com/leontm-dev/spiky/blob/add-license-1/LICENSE.md"}]
+  "licenses": [
+    {
+      "type": "GNU GENERAL PUBLIC LICENSE",
+      "url": "https://github.com/leontm-dev/spiky/blob/add-license-1/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
 }
