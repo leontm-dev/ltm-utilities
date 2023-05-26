@@ -1,11 +1,14 @@
 # LTM-utilities
 
-LTM-utilities ist ein Utility Package welches deinen Alltag mit JavaScript und Node.js mit vielleicht manchmal lästigen Sachen vereinfachen soll.
-
-**Nicht falsch verstehen**, mit lästig meine ich nicht, lästig zu benutzen, sondern vielleicht manchmal einfach zeitaufwenig zu machen, jedes mal, aufs neue. 
+This is a utility package for practical uses. It can be used to generate ranodm strings, random colors, it can give you the difference between two dates back and much much more.
+If you have suggestions, just use the GitHub Discussions.
 
 ## Use
 
 1. `npm install ltm-utilities`
-2. Binde das Package in deinen Code ein: `const Utils = require("ltm-utilities");`
-3. Passe die Ausgabesprache der Utils mit einem einfachen Länder-String an (die String bekommst du mit `new Utils().languages`)
+2. Add the package to your code: `const Utils = require("ltm-utilities");`
+3. Define the language in which the package should return strings, like the difference between dates: (`new Utils().languages`)
+
+## Docs
+
+[The GitBook](https://leontm-systems.gitbook.io/ltm-utilities-docs/)
