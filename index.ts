@@ -219,8 +219,8 @@ class Utils {
       "9",
     ];
     let color: string = "#";
-    for (let i: number = 0; i <= 6; i++) {
-      color = parts[Math.floor(Math.random() * parts.length)];
+    for (let i: number = 0; i < 6; i++) {
+      color += parts[Math.floor(Math.random() * parts.length)];
     }
     return color;
   }
