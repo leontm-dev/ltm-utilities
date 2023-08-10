@@ -1,48 +1,27 @@
-class Utils {
+export class Utilities {
   language: string;
   /**
    *
-   * @param {String} language - This specifies the language to use in this package. Use the official language strings.
+   * @param {String} language - This specifies the language to use in this package. Only en and de supported.
    */
   constructor(language: string) {
-    if (this.languages.includes(language)) {
+    if (language.toUpperCase() === "EN" || language.toUpperCase() === "DE") {
       this.language = language;
     } else {
-      throw new Error(
-        "ValueError: given language string does not match any of the supported strings."
-      );
+      throw new Error("ValueError: language must be en or de");
     }
   }
   /**
    * @returns Returns every supported language.
    */
-  languages = [
-    "en-US",
-    "en-AU",
-    "en-CA",
-    "en-BZ",
-    "en-CA",
-    "en-029",
-    "en-IE",
-    "en-JM",
-    "en-NZ",
-    "en-ZA",
-    "en-TT",
-    "en-GB",
-    "de-AT",
-    "de-LI",
-    "de-LU",
-    "de-CH",
-    "en-IE",
-    "de-DE",
-  ];
+  languages = ["en", "de"];
   /**
    *
    * @param {Date} date1
    * @param {Date} date2
    * @returns
    */
-  compareDates(date1: any, date2: any) {
+  compareDates(date1: any, date2: any): string {
     const diff = Math.abs(date1 - date2);
 
     const milliseconds = diff;
@@ -82,7 +61,7 @@ class Utils {
    * @param {Number} num - Number you would like to convert
    * @returns Returs a number like this: 8000 => 8k
    */
-  intToString(num: any) {
+  intToString(num: any): string {
     num = num.toString().replace(/[^0-9.]/g, "");
     if (num < 1000) {
       return num;
@@ -114,9 +93,14 @@ class Utils {
    * @param {Number} length - The length of the returned id
    * @returns A Id string with the components you chooses and the length you defined!
    */
-  generateId(numbers: boolean, small: boolean, big: boolean, length: number) {
+  generateId(
+    numbers: boolean,
+    small: boolean,
+    big: boolean,
+    length: number
+  ): string {
     let parts: string[] = [];
-    const parts_G = [
+    const parts_G: string[] = [
       "A",
       "B",
       "C",
@@ -199,7 +183,7 @@ class Utils {
     }
     return id;
   }
-  randomColor() {
+  randomColor(): string {
     const parts: string[] = [
       "A",
       "B",
@@ -225,4 +209,3 @@ class Utils {
     return color;
   }
 }
-export default Utils;
